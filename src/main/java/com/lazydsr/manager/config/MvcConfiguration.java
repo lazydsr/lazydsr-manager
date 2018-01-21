@@ -39,4 +39,5 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter {
             //registry.addInterceptor(new UserInterceptor()).addPathPatterns("/**").excludePathPatterns("/error", "/login");
         }
     }
+
 }
