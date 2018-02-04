@@ -6,6 +6,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Map;
+
 /**
  * BaseController
  * PROJECT_NAME: lazydsr-application
@@ -17,18 +19,19 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class BaseController implements ErrorController {
     @RequestMapping({"/", "/index"})
-    public ModelAndView index(ModelAndView modelAndView) {
+    public String index(Map map) {
 
-        modelAndView.setViewName("index");
-        return modelAndView;
+
+        //map.put("title", "shouye");
+        return "index";
     }
 
     @RequestMapping("/login")
-    public String login(String s,Model model) {
+    public String login(String s, Model model) {
 
         model.addAttribute("hello", "1111111111");
-        if ("1".equals(s)){
-            model.addAttribute("index","hello");
+        if ("1".equals(s)) {
+            model.addAttribute("index", "hello");
         }
         return "login";
     }

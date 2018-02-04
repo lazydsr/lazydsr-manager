@@ -14,8 +14,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>AdminLazy v2.0.0 | 控制面板</title>
-    <link rel="icon" href="${ctx}/favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="${ctx}/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="${ctx}/static/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="${ctx}/static/favicon.ico" type="image/x-icon"/>
     <!-- Tell the browser to be responsive to screen width -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
