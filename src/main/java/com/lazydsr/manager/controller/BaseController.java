@@ -2,6 +2,7 @@ package com.lazydsr.manager.controller;
 
 import org.springframework.boot.autoconfigure.web.ErrorController;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -18,23 +19,28 @@ public class BaseController implements ErrorController {
     @RequestMapping({"/", "/index"})
     public ModelAndView index(ModelAndView modelAndView) {
 
-        modelAndView.setViewName("ftl/home/index");
+        modelAndView.setViewName("index");
         return modelAndView;
     }
 
     @RequestMapping("/login")
-    public String login() {
-        return "ftl/login";
+    public String login(String s,Model model) {
+
+        model.addAttribute("hello", "1111111111");
+        if ("1".equals(s)){
+            model.addAttribute("index","hello");
+        }
+        return "login";
     }
 
     @RequestMapping("/logout")
     public String logout() {
-        return "ftl/logout";
+        return "logout";
     }
 
     @RequestMapping("/error")
     public String error() {
-        return "ftl/404";
+        return "404";
     }
 
     @Override

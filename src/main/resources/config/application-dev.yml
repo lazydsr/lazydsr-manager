@@ -12,15 +12,22 @@ server:
 ###FREEMARKER (FreeMarkerAutoConfiguration)
 ########################################################
 spring:
-  freemarker:
-    allow-request-override: false
-    cache: true
-    charset: UTF-8
-    content-type: text/html
-    expose-request-attributes: false
-    expose-session-attributes: false
-    expose-spring-macro-helpers: false
-    request-context-attribute: request
+  thymeleaf:
+     cache: false
+     prefix: classpath:/templates/thymeleaf/
+     suffix: .html
+     encoding: UTF-8
+     content-type: text/html
+     mode: HTML5
+#  freemarker:
+#    allow-request-override: false
+#    cache: true
+#    charset: UTF-8
+#    content-type: text/html
+#    expose-request-attributes: false
+#    expose-session-attributes: false
+#    expose-spring-macro-helpers: false
+#    request-context-attribute: request
     #    prefix=
     #    settings.*=
     #    suffix: .html

@@ -35,7 +35,7 @@
         <div class="mainContent" id="content-main" style="margin: 0; padding: 0;">
             <!--<div id="" style="cursor: progress; position: fixed;  width: 100%; height: 100%; background: #fff; overflow: hidden;margin: 0 auto;">-->
             <div id="ajax-loader-iframe" style="cursor: progress;position:fixed; width: 100%; height: 100%;overflow: hidden;display: none">
-                <img style="position: absolute;top:40%;margin-left:38%;transform: translateY(20%);" src="../static/img/ajax-loader.gif"/>
+                <img style="position: absolute;top:40%;margin-left:38%;transform: translateY(20%);" src="../../static/img/ajax-loader.gif"/>
             </div>
             <iframe id="LAZY-main-iframe" class="LAZY-main-iframe" width="100%" height="100%" src="${ctx}/basic/index/index" frameborder="0" data-id="${ctx}/basic/index/index"></iframe>
             <!--<iframe class="LAZY-main-iframe" style="display: none" width="100%" src="indexIframe2.html" frameborder="0" data-id="indexIframe2.html"></iframe>-->

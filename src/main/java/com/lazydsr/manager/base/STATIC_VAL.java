@@ -32,9 +32,9 @@ public class STATIC_VAL {
         address = InetAddress.getLocalHost();
         SERVER_NAME = address.getHostAddress();
         SERVER_IP = address.getHostAddress();
-        VIEW_400 = "ftl/404";
-        VIEW_404 = "ftl/404";
-        VIEW_500 = "ftl/500";
+        VIEW_400 = "404";
+        VIEW_404 = "404";
+        VIEW_500 = "500";
     }
 
 

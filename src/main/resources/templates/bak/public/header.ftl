@@ -28,7 +28,7 @@
                             <!-- inner menu: contains the actual data -->
                             <ul class="menu">
                                 <li><!-- start message --> <a href="#">
-                                    <div class="pull-left"><img src="../static/img/user2-160x160.jpg" class="img-circle" alt="User Image"></div>
+                                    <div class="pull-left"><img src="../../static/img/user2-160x160.jpg" class="img-circle" alt="User Image"></div>
                                     <h4> 团队支持
                                         <small><i class="fa fa-clock-o"></i> 5 mins</small>
                                     </h4>
@@ -84,13 +84,13 @@
                 <!-- User Account: style can be found in dropdown.less -->
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="../static/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                        <img src="../../static/img/user2-160x160.jpg" class="user-image" alt="User Image">
                         <span class="hidden-xs">系统管理员</span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="../static/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                            <img src="../../static/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                             <p> 系统管理员
                                 <small>system</small>
