@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:include="layout/layout::header">
+<head th:replace="layout/layout :: common_header(~{::title},~{::link})">
+    <title></title>
 
-
+    <link rel="stylesheet" href="static/plugins/bootstrap/css/bootstrap-theme.min.css" th:href="@{/static/plugins/bootstrap/css/bootstrap-theme.min.css}">
+    <script src="../../static/plugins/bootstrap/js/npm.js" th:src="@{/static/plugins/bootstrap/js/npm.js}"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini fixed">
 <div id="ajax-loader" style="cursor: progress; position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; background: #fff; z-index: 10000; overflow: hidden;">
@@ -617,21 +619,17 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 3 -->
-<script src="../../static/plugins/jquery/js/jquery.min.js" th:src="@{/static/plugins/jquery/js/jquery.min.js}"></script>
-<!-- jQuery UI 1.11.4 -->
-<!--<script src="../../static/plugins/jquery-ui/js/jquery-ui.min.js"></script>-->
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-    //    $.widget.bridge('uibutton', $.ui.button);
-</script>
-<!-- Bootstrap 3.3.7 -->
-<script src="../../static/plugins/bootstrap/js/bootstrap.min.js" th:src="@{/static/plugins/bootstrap/js/bootstrap.min.js}"></script>
+<!--<div th:replace="layout/layout :: common_footer()">-->
+<!--&lt;!&ndash;添加自定义的js文件&ndash;&gt;-->
+<!--</div>-->
+<div th:insert="~{layout/layout::common_footer}">
+
+</div>
 <!-- AdminLazy App -->
-<script src="../../static/js/adminlazy.js?v=1.0" th:src="@{/static/js/adminlazy.js(v=1.0)}"></script>
+<script src="/static/plugins/bootstrap/js/bootstrap.min.js" th:src="@{/static/plugins/bootstrap/js/bootstrap.min.js}"></script>
+<script src="/static/js/adminlazy.js?v=1.0" th:src="@{/static/js/adminlazy.js(v=1.0)}"></script>
 <!-- AdminLazy for demo purposes -->
-<script src="../../static/js/index.js?v=1.1" th:src="@{/static/js/index.js(v=1.0)}"></script>
-<script src="../../static/js/indextab.js?v=1.0" th:src="@{/static/js/indextab.js(v=1.0)}"></script>
-<script src="../../static/js/lazyutil.js?v=1.0" th:src="@{/static/js/lazyutil.js(v=1.0)}"></script>
+<script src="/static/js/index.js?v=1.1" th:src="@{/static/js/index.js(v=1.0)}"></script>
+<script src="/static/js/indextab.js?v=1.0" th:src="@{/static/js/indextab.js(v=1.0)}"></script>
 </body>
 </html>
